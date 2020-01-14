@@ -1,14 +1,21 @@
 package com.equipe4.apptest.subscription
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import com.equipe4.apptest.R
-import kotlinx.android.synthetic.main.activity_subscription_screen2.*
+
 
 class SubscriptionScreen2 : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_subscription_screen2)
+    }
+
+    fun goToSubscribe3(view: View) {
+        val intent = Intent(this, SubscriptionScreen3::class.java)
+        startActivity(intent)
     }
 }

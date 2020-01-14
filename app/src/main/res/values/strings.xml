@@ -11,4 +11,6 @@
     <string name="subscription2_text2">OU</string>
     <string name="button_male">Un homme</string>
     <string name="button_female">Une femme</string>
+    <string name="subscription3_text1">Quel âge as-tu ?</string>
+    <string name="age_hint">Age</string>
 </resources>

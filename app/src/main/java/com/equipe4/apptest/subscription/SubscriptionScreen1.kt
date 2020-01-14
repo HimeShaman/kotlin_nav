@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.view.View
 import com.equipe4.apptest.R
 import kotlinx.android.synthetic.main.activity_subscription_screen1.*
-import com.equipe4.apptest.subscription.SubscriptionScreen2
 
 class SubscriptionScreen1 : AppCompatActivity() {
 
@@ -30,7 +29,6 @@ class SubscriptionScreen1 : AppCompatActivity() {
         {
             textInputEditText_firstName.error = null
             textInputEditText_lastName.error = null
-//            TODO : change intent to next screen when created instead of going back to Main
             val intent = Intent(this, SubscriptionScreen2::class.java)
             startActivity(intent)
         }
