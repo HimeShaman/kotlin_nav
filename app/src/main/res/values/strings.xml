@@ -13,4 +13,6 @@
     <string name="button_female">Une femme</string>
     <string name="subscription3_text1">Quel âge as-tu ?</string>
     <string name="age_hint">Age</string>
+    <string name="subscription4_text1">Quelle est votre adresse mail ?</string>
+    <string name="hint_email">Email</string>
 </resources>
