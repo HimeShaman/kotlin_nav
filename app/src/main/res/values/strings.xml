@@ -1,18 +1,29 @@
 <resources>
+
     <string name="app_name">apptest</string>
+
+    <!-- Buttons -->
     <string name="str_button_subscribe">Inscription</string>
+    <string name="str_button_next">Suivant</string>
+    <string name="str_button_male">Un homme</string>
+    <string name="str_button_female">Une femme</string>
+
+    <!-- Subscription texts -->
     <string name="subscription1_text1">Oh salut, on ne se connaît pas !</string>
     <string name="subscription1_text2">Comment tu t’appelles ?</string>
-    <string name="first_name_hint">Prénom</string>
-    <string name="last_name_hint">Nom</string>
-    <string name="str_button_next">Suivant</string>
-    <string name="error_emptyInput">Veuillez remplir tous les champs.</string>
     <string name="subscription2_text1">Tu es</string>
     <string name="subscription2_text2">OU</string>
-    <string name="button_male">Un homme</string>
-    <string name="button_female">Une femme</string>
     <string name="subscription3_text1">Quel âge as-tu ?</string>
-    <string name="age_hint">Age</string>
     <string name="subscription4_text1">Quelle est votre adresse mail ?</string>
-    <string name="hint_email">Email</string>
+    <string name="subscription5_text1">Crée ton mot de passe</string>
+
+    <!-- input hints -->
+    <string name="first_name_hint">Prénom</string>
+    <string name="last_name_hint">Nom</string>
+    <string name="age_hint">Age</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Mot de passe</string>
+
+    <!-- Errors -->
+    <string name="error_emptyInput">Veuillez remplir tous les champs.</string>
 </resources>

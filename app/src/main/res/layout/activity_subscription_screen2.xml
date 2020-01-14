@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="300dp"
         android:onClick="goToSubscribe3"
-        android:text="@string/button_male"
+        android:text="@string/str_button_male"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="200dp"
         android:onClick="goToSubscribe3"
-        android:text="@string/button_female"
+        android:text="@string/str_button_female"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.507"
