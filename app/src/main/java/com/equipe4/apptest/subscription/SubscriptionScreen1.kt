@@ -3,12 +3,10 @@ package com.equipe4.apptest.subscription
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
-import android.widget.Toast
-import com.equipe4.apptest.MainActivity
 import com.equipe4.apptest.R
 import kotlinx.android.synthetic.main.activity_subscription_screen1.*
+import com.equipe4.apptest.subscription.SubscriptionScreen2
 
 class SubscriptionScreen1 : AppCompatActivity() {
 
@@ -26,12 +24,12 @@ class SubscriptionScreen1 : AppCompatActivity() {
         if(lastName == ""){
             textInputEditText_lastName.error = getString(R.string.error_emptyInput)
         }
-        if(lastName != "" && firstName!="")
+        if (firstName !== "" && lastName !== "" )
         {
             textInputEditText_firstName.error = null
             textInputEditText_lastName.error = null
 //            TODO : change intent to next screen when created instead of going back to Main
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, SubscriptionScreen2::class.java)
             startActivity(intent)
         }
     }

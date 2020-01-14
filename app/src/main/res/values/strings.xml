@@ -7,4 +7,8 @@
     <string name="last_name_hint">Nom</string>
     <string name="str_button_next">Suivant</string>
     <string name="error_emptyInput">Veuillez remplir tous les champs.</string>
+    <string name="subscription2_text1">Tu es</string>
+    <string name="subscription2_text2">OU</string>
+    <string name="button_male">Un homme</string>
+    <string name="button_female">Une femme</string>
 </resources>
