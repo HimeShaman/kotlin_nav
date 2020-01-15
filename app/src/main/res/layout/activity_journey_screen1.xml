@@ -4,13 +4,149 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
     tools:context=".journey.JourneyScreen1">
+
+
+    <CheckBox
+        android:id="@+id/journey_checkbox1_train"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/journey_checkbox2_bus"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_journey_end" />
 
     <TextView
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Vous pouvez voyager !"
-        tools:layout_editor_absoluteX="169dp"
-        tools:layout_editor_absoluteY="245dp" />
+        android:layout_marginTop="16dp"
+        android:text="@string/journey_option_1"
+        app:layout_constraintEnd_toEndOf="@+id/journey_checkbox1_train"
+        app:layout_constraintStart_toStartOf="@+id/journey_checkbox1_train"
+        app:layout_constraintTop_toBottomOf="@+id/journey_checkbox1_train" />
+
+    <CheckBox
+        android:id="@+id/journey_checkbox2_bus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/journey_checkbox3_metro"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/journey_checkbox1_train"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_journey_end" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/journey_option_2"
+        app:layout_constraintEnd_toEndOf="@+id/journey_checkbox2_bus"
+        app:layout_constraintStart_toStartOf="@+id/journey_checkbox2_bus"
+        app:layout_constraintTop_toBottomOf="@+id/journey_checkbox2_bus" />
+
+    <CheckBox
+        android:id="@+id/journey_checkbox3_metro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/journey_checkbox4_tram"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/journey_checkbox2_bus"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_journey_end" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/journey_option_3"
+        app:layout_constraintEnd_toEndOf="@+id/journey_checkbox3_metro"
+        app:layout_constraintStart_toStartOf="@+id/journey_checkbox3_metro"
+        app:layout_constraintTop_toBottomOf="@+id/journey_checkbox3_metro" />
+
+    <CheckBox
+        android:id="@+id/journey_checkbox4_tram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/journey_checkbox3_metro"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_journey_end" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_journey_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="217dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/str_journey_start"
+        android:textColorHint="@color/blue"
+        app:boxBackgroundColor="@color/colorWhite"
+        app:endIconMode="custom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:startIconDrawable="@drawable/ic_search"
+        app:startIconTint="@color/blue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText_input_journey_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_journey_end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/str_journey_end"
+        android:textColorHint="@color/blue"
+        app:boxBackgroundColor="@color/colorWhite"
+        app:boxBackgroundMode="filled"
+        app:endIconMode="custom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_journey_start"
+        app:startIconDrawable="@drawable/ic_search"
+        app:startIconTint="@color/blue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText_input_journey_end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/journey_option_4"
+        app:layout_constraintEnd_toEndOf="@+id/journey_checkbox4_tram"
+        app:layout_constraintStart_toStartOf="@+id/journey_checkbox4_tram"
+        app:layout_constraintTop_toBottomOf="@+id/journey_checkbox4_tram" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/material_button_search_journey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="29dp"
+        android:onClick="doSearch"
+        android:text="@string/str_button_search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
 </androidx.constraintlayout.widget.ConstraintLayout>

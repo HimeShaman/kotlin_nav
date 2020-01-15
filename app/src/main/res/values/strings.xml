@@ -55,5 +55,12 @@
     <string name="str_button_login">Connexion</string>
     <string name="str_login_false">Es-tu sur de tes identifiants ?</string>
     <string name="str_login_failed">Désolé ! Nous rencontrons un problème :(</string>
+    <string name="str_journey_start">Point de départ</string>
+    <string name="str_journey_end">Point d\'arrivée</string>
+    <string name="journey_option_1">Train</string>
+    <string name="journey_option_2">Bus</string>
+    <string name="journey_option_3">Métro</string>
+    <string name="journey_option_4">Tram</string>
+    <string name="str_button_search">Rechercher</string>
 
 </resources>
