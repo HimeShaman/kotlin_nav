@@ -14,6 +14,9 @@ class SubscriptionScreen2 : AppCompatActivity() {
         setContentView(R.layout.activity_subscription_screen2)
     }
 
+    //TODO : factorize "go to next screen" function
+    //TODO : finish() previous activity
+    //TODO : send inputs to next activity
     fun goToSubscribe3(view: View) {
         val intent = Intent(this, SubscriptionScreen3::class.java)
         startActivity(intent)

@@ -15,6 +15,9 @@ class SubscriptionScreen4 : AppCompatActivity() {
         setContentView(R.layout.activity_subscription_screen4)
     }
 
+    //TODO : factorize "go to next screen" function
+    //TODO : finish() previous activity
+    //TODO : send inputs to next activity
     fun goToSubscribe5(view: View) {
         val email = textInputEditText_email.text.toString()
 

@@ -15,6 +15,9 @@ class SubscriptionScreen5 : AppCompatActivity() {
         setContentView(R.layout.activity_subscription_screen5)
     }
 
+    //TODO : factorize "go to next screen" function
+    //TODO : finish() previous activity
+    //TODO : send inputs to next activity
     fun goToSubscribe6 (view: View) {
         val password = textInputEditText_password
         val passwordString = textInputEditText_password.toString()
