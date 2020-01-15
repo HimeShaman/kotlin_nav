@@ -29,4 +29,13 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.68" />
 
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="goToLogin"
+        android:text="Connexion"
+        tools:layout_editor_absoluteX="149dp"
+        tools:layout_editor_absoluteY="401dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
