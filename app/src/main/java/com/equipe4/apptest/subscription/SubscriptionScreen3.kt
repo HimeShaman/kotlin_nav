@@ -17,17 +17,25 @@ class SubscriptionScreen3 : AppCompatActivity() {
     fun goToSubscribe4(view: View) {
 
         val ageInput : String = textInputEditText_age.text.toString()
-        var age = 0
+
+//        Checks if age is empty to display error
 
         if (ageInput.isEmpty()){
             textInputEditText_age.error = getString(R.string.error_emptyInput)
         }
 
+//        If not empty, check if age is more than 16
+
         if(ageInput.isNotEmpty()) {
+
             var age : Int = ageInput.toInt()
+
             if (age < 16) {
                 textInputEditText_age.error = getString(R.string.error_invalidAge)
             }
+
+//        No errors, go to next screen
+
             if (age >= 16)
             {
                 textInputEditText_age.error = null

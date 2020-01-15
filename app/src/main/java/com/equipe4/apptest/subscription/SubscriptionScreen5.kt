@@ -16,10 +16,13 @@ class SubscriptionScreen5 : AppCompatActivity() {
     }
 
     fun goToSubscribe6 (view: View) {
+
         val password = textInputEditText_password
         val passwordString = textInputEditText_password.toString()
 
-        if ( passwordString == "")
+//        Checks if email isn't empty and is in right format to display error
+
+        if ( passwordString.isEmpty())
         {
             textInputEditText_password.error = getString(R.string.error_emptyInput)
         }
@@ -27,6 +30,8 @@ class SubscriptionScreen5 : AppCompatActivity() {
         if (password.length() < 8){
             textInputEditText_password.error = getString(R.string.error_shortPassword)
         }
+
+//        No errors, go to next screen
 
         if (password.length() >= 8) {
             val intent = Intent(this, SubscriptionScreen6::class.java)
