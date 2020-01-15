@@ -12,13 +12,8 @@ class SubscriptionScreen9 : AppCompatActivity() {
         setContentView(R.layout.activity_subscription_screen9)
 
         val bio = intent.getStringExtra("bio")
-        val email = intent.getStringExtra("email")
-        val age = intent.getStringExtra("age")
-        val firstName = intent.getStringExtra("firstName")
-        val lastName = intent.getStringExtra("lastName")
         val view = findViewById(R.id.text_view_alert) as TextView
-        view.text = firstName + "||" + lastName + "||" + age + "||" + bio + "||" + email + "||" + age
+        view.text = bio
 
-        finish()
     }
 }

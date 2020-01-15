@@ -21,7 +21,7 @@ class SubscriptionScreen8 : AppCompatActivity() {
         val lastName : String? = intent.getStringExtra("lastName")
         val age : String? = intent.getStringExtra("age")
 
-        val intent = Intent(this, SubscriptionScreen8::class.java)
+        val intent = Intent(this, SubscriptionScreen9::class.java)
 
         intent.putExtra("bio", bio)
         intent.putExtra("email", email)
