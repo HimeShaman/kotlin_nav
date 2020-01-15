@@ -28,7 +28,9 @@
 
     <!-- Errors -->
     <string name="error_emptyInput">Veuillez remplir tous les champs.</string>
+    <string name="error_invalidAge">Vous devez avoir 16 ans minimum pour vous inscrire.</string>
     <string name="error_invalidEmail">Veuillez entrer une adresse e-mail valide.</string>
     <string name="error_shortPassword">Votre mot de passe doit faire minimum 8 caractères.</string>
+    <string name="subscribe5_text2">Votre mot de passe doit comporter 8 caractères ou plus. Essayez de le rallonger ou d’ajouter des symboles, tels que !, #, ou %.</string>
 
 </resources>
