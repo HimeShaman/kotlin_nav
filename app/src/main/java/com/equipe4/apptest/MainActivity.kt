@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_subscription_screen9)
+        setContentView(R.layout.activity_main)
     }
 
     fun goToSubscribe1(view: View){

@@ -1,5 +1,5 @@
 <resources>
-    
+
     <!-- General -->
     <string name="app_name">Safe on Feet</string>
     <string name="title_activity_maps">Map</string>
@@ -53,5 +53,7 @@
     <string name="subscription9_text2">Notre équipe va vérifier votre identité dans les 24 heures.  Veuillez confirmer votre adresse en ouvrant le lien envoyé par mail.</string>
     <string name="contentdescription_background">background</string>
     <string name="str_button_login">Connexion</string>
+    <string name="str_login_false">Es-tu sur de tes identifiants ?</string>
+    <string name="str_login_failed">Désolé ! Nous rencontrons un problème :(</string>
 
 </resources>

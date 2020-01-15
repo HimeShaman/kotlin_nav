@@ -1,10 +1,9 @@
 package com.equipe4.apptest
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.os.Handler;
+import android.content.Intent
+import android.os.Bundle
+import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
-import com.equipe4.apptest.messaging.MessagerieList
 
 
 class SplashScreen : AppCompatActivity() {
@@ -16,7 +15,7 @@ class SplashScreen : AppCompatActivity() {
 
         Handler().postDelayed({
 
-                val i = Intent(this, MessagerieList::class.java)
+                val i = Intent(this, MainActivity::class.java)
                 startActivity(i)
                 finish()
 

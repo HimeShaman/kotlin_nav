@@ -1,12 +1,15 @@
 package com.equipe4.apptest
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import com.equipe4.apptest.journey.JourneyScreen1
 import com.equipe4.apptest.network.app.AppServiceFactory
 import com.equipe4.apptest.network.app.users.UserLogin
 import com.equipe4.apptest.network.app.users.UsersService
+import kotlinx.android.synthetic.main.activity_login.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -24,24 +27,23 @@ class LoginActivity : AppCompatActivity() {
 
 
     fun login(view: View){
-    usersService.login()
+        usersService.login()
             .enqueue(object: Callback<UserLogin>{
                 override fun onResponse(call: Call<UserLogin>, response: Response<UserLogin>) {
-                   print(response.body()?.email)
-                    Toast.makeText(applicationContext, response.body()?.email, Toast.LENGTH_LONG).show()
+                    if (textInputEditText_Login_email.text.toString() != response.body()?.email
+                        || textInputEditText_Login_password.text.toString() != response.body()?.password ){
+                        Toast.makeText(applicationContext,getString(R.string.str_login_false), Toast.LENGTH_LONG).show()
+                    }else {
+                        val intent = Intent(this@LoginActivity, JourneyScreen1::class.java)
+                        startActivity(intent)
+                        finish()
+                    }
                 }
 
                 override fun onFailure(call: Call<UserLogin>, t: Throwable) {
-                    Toast.makeText(applicationContext, "Nous n'avons pas pu te connecter :(", Toast.LENGTH_LONG).show()
+                    Toast.makeText(applicationContext, getString(R.string.str_login_failed), Toast.LENGTH_LONG).show()
                     println(t.message)
                 }
             } )
-
-//        if(userResponse.isSuccessful){
-//            print(userResponse.body()?.email)
-//            print(userResponse.body()?.password)
-//            Toast.makeText(this, "Email:${userResponse.body()?.email} " +
-//                    "& pass:${userResponse.body()?.password}", Toast.LENGTH_LONG).show()
-//        }
     }
 }
