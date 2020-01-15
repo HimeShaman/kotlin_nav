@@ -19,16 +19,23 @@ class SubscriptionScreen4 : AppCompatActivity() {
     //TODO : finish() previous activity
     //TODO : send inputs to next activity
     fun goToSubscribe5(view: View) {
+
         val email = textInputEditText_email.text.toString()
+
+//        Checks if email isn't empty and is in right format
+
+        if (email.isEmpty()){
+            textInputEditText_email.error = getString(R.string.error_emptyInput)
+        }
 
         if (!android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
             textInputEditText_email.error = getString(R.string.error_invalidEmail)
         }
-        if (email == ""){
-            textInputEditText_email.error = getString(R.string.error_emptyInput)
-        }
 
-        if(email != "" && android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+
+//        No errors, go to next screen
+
+        if(email.isNotEmpty() && android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
             val intent = Intent(this, SubscriptionScreen5::class.java)
             startActivity(intent)
         }

@@ -18,16 +18,23 @@ class SubscriptionScreen1 : AppCompatActivity() {
     //TODO : finish() previous activity
     //TODO : send inputs to next activity
     fun goToSubscribe2(view: View){
+
         val firstName:String = textInputEditText_firstName.text.toString()
         val lastName:String = textInputEditText_lastName.text.toString()
-        if (firstName == ""){
+
+//        Checks if firstName & lastName are empty to display error
+
+        if (firstName.isEmpty()){
             textInputEditText_firstName.error = getString(R.string.error_emptyInput)
         }
-//        Checks if firstName & lastName are empty to display error/go to next screen
-        if(lastName == ""){
+
+        if(lastName.isEmpty()){
             textInputEditText_lastName.error = getString(R.string.error_emptyInput)
         }
-        if (firstName != "" && lastName != "" )
+
+//        No errors, go to next screen
+
+        if (firstName.isNotEmpty() && lastName.isNotEmpty())
         {
             textInputEditText_firstName.error = null
             textInputEditText_lastName.error = null
