@@ -21,6 +21,9 @@ class SubscriptionScreen4 : AppCompatActivity() {
     fun goToSubscribe5(view: View) {
 
         val email = textInputEditText_email.text.toString()
+        val firstName : String? = intent.getStringExtra("firstName")
+        val lastName : String? = intent.getStringExtra("lastName")
+        val age : String? = intent.getStringExtra("age")
 
 //        Checks if email isn't empty and is in right format
 
@@ -32,11 +35,16 @@ class SubscriptionScreen4 : AppCompatActivity() {
             textInputEditText_email.error = getString(R.string.error_invalidEmail)
         }
 
-
 //        No errors, go to next screen
 
         if(email.isNotEmpty() && android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
             val intent = Intent(this, SubscriptionScreen5::class.java)
+
+            intent.putExtra("email", email)
+            intent.putExtra("age", age)
+            intent.putExtra("firstName", firstName)
+            intent.putExtra("lastName", lastName)
+
             startActivity(intent)
         }
     }

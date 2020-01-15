@@ -22,6 +22,10 @@ class SubscriptionScreen5 : AppCompatActivity() {
 
         val password = textInputEditText_password
         val passwordString = textInputEditText_password.toString()
+        val email : String? = intent.getStringExtra("email")
+        val firstName : String? = intent.getStringExtra("firstName")
+        val lastName : String? = intent.getStringExtra("lastName")
+        val age : String? = intent.getStringExtra("age")
 
 //        Checks if email isn't empty and is in right format to display error
 
@@ -38,6 +42,12 @@ class SubscriptionScreen5 : AppCompatActivity() {
 
         if (password.length() >= 8) {
             val intent = Intent(this, SubscriptionScreen6::class.java)
+
+            intent.putExtra("email", email)
+            intent.putExtra("age", age)
+            intent.putExtra("firstName", firstName)
+            intent.putExtra("lastName", lastName)
+
             startActivity(intent)
         }
     }
