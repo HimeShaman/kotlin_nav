@@ -9,8 +9,8 @@
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="160dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="120dp"
         android:text="@string/subscription5_text1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,13 +21,13 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="200dp"
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="200dp"
+        style="@style/TextInput"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/textView8">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/textInputEditText_password"
@@ -56,7 +56,7 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="200dp"
-        android:text="@string/subscribe5_text2"
+        android:text="@string/subscription5_text3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
