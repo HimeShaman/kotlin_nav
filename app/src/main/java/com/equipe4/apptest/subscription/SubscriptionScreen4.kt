@@ -16,7 +16,18 @@ class SubscriptionScreen4 : AppCompatActivity() {
     }
 
     fun goToSubscribe5(view: View) {
-        val intent = Intent(this, SubscriptionScreen5::class.java)
-        startActivity(intent)
+        val email = textInputEditText_email.text.toString()
+
+        if (!android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+            textInputEditText_email.error = getString(R.string.error_invalidEmail)
+        }
+        if (email == ""){
+            textInputEditText_email.error = getString(R.string.error_emptyInput)
+        }
+
+        if(email != "" && android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+            val intent = Intent(this, SubscriptionScreen5::class.java)
+            startActivity(intent)
+        }
     }
 }

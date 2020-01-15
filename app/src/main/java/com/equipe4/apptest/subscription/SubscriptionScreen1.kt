@@ -20,7 +20,6 @@ class SubscriptionScreen1 : AppCompatActivity() {
         if (firstName == ""){
             textInputEditText_firstName.error = getString(R.string.error_emptyInput)
         }
-
 //        Checks if firstName & lastName are empty to display error/go to next screen
         if(lastName == ""){
             textInputEditText_lastName.error = getString(R.string.error_emptyInput)

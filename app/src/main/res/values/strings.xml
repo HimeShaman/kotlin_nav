@@ -14,8 +14,10 @@
     <string name="subscription2_text1">Tu es</string>
     <string name="subscription2_text2">OU</string>
     <string name="subscription3_text1">Quel âge as-tu ?</string>
-    <string name="subscription4_text1">Quelle est votre adresse mail ?</string>
-    <string name="subscription5_text1">Crée ton mot de passe</string>
+    <string name="subscription4_text1">Quelle est ton adresse mail ?</string>
+    <string name="subscription4_text2">J’aimerais recevoir des informations promotionnelles, notamment des enquêtes, des messages sympas et beaucoup d’amour de la part de Safe on feet, via email.</string>
+    <string name="subscription5_text1">Crée ton mot de passe</string><string name="subscription5_text2">Votre mot de passe doit comporter 8 caractères ou plus. Essayez de le rallonger ou d’ajouter des symboles, tels que !, #, ou %.</string>
+    <string name="subscription6_text1">Ajoute ta photo de profil</string>
 
     <!-- input hints -->
     <string name="first_name_hint">Prénom</string>
@@ -26,4 +28,7 @@
 
     <!-- Errors -->
     <string name="error_emptyInput">Veuillez remplir tous les champs.</string>
+    <string name="error_invalidEmail">Veuillez entrer une adresse e-mail valide.</string>
+    <string name="error_shortPassword">Votre mot de passe doit faire minimum 8 caractères.</string>
+
 </resources>

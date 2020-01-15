@@ -7,6 +7,7 @@ import android.view.View
 import com.equipe4.apptest.subscription.SubscriptionScreen1
 
 
+
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
