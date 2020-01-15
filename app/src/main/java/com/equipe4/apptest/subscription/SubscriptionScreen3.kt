@@ -15,21 +15,26 @@ class SubscriptionScreen3 : AppCompatActivity() {
     }
 
     fun goToSubscribe4(view: View) {
-        val ageString:String = textInputEditText_age.text.toString()
-        val age = ageString.toInt()
 
-        if (age < 16) {
-            textInputEditText_age.error = getString(R.string.error_invalidAge)
-        }
+        val ageInput : String = textInputEditText_age.text.toString()
+        var age = 0
 
-        if (ageString == ""){
+        if (ageInput.isEmpty()){
             textInputEditText_age.error = getString(R.string.error_emptyInput)
         }
 
-        if (ageString != "" && age >= 16) {
-            textInputEditText_age.error = null
-            val intent = Intent(this, SubscriptionScreen4::class.java)
-            startActivity(intent)
+        if(ageInput.isNotEmpty()) {
+            var age : Int = ageInput.toInt()
+            if (age < 16) {
+                textInputEditText_age.error = getString(R.string.error_invalidAge)
+            }
+            if (age >= 16)
+            {
+                textInputEditText_age.error = null
+                val intent = Intent(this, SubscriptionScreen4::class.java)
+                startActivity(intent)
+            }
         }
+
     }
 }
