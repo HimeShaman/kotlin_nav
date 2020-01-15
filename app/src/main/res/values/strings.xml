@@ -1,6 +1,9 @@
 <resources>
-
-    <string name="app_name">apptest</string>
+    
+    <!-- General -->
+    <string name="app_name">Safe on Feet</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="splash_screen">Splash Screen</string>
 
     <!-- Buttons -->
     <string name="str_button_subscribe">Inscription</string>
@@ -25,6 +28,10 @@
     <string name="subscription8_text1">Plus qu\'une étape !</string>
     <string name="subscription8_text2">Ajoute ta carte d\'identité</string>
 
+
+    <!-- Messaging texts-->
+    <string name="message_list">Messagerie</string>
+
     <!-- input hints -->
     <string name="first_name_hint">Prénom</string>
     <string name="last_name_hint">Nom</string>
@@ -45,5 +52,6 @@
     <string name="subscription9_text1">FÉLICITATIONS !</string>
     <string name="subscription9_text2">Notre équipe va vérifier votre identité dans les 24 heures.  Veuillez confirmer votre adresse en ouvrant le lien envoyé par mail.</string>
     <string name="contentdescription_background">background</string>
+    <string name="str_button_login">Connexion</string>
 
 </resources>
