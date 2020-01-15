@@ -55,5 +55,6 @@
     <string name="str_button_login">Connexion</string>
     <string name="str_login_false">Es-tu sur de tes identifiants ?</string>
     <string name="str_login_failed">Désolé ! Nous rencontrons un problème :(</string>
+    <string name="contentdescription_checkpicture" />
 
 </resources>
