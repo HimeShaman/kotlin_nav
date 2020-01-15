@@ -6,17 +6,17 @@ import android.os.Bundle
 import android.view.View
 import com.equipe4.apptest.R
 
-class SubscriptionScreen6 : AppCompatActivity() {
+
+class SubscriptionScreen7 : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_subscription_screen6)
+        setContentView(R.layout.activity_subscription_screen7)
     }
 
-    fun goToSubscribe7(view: View){
+    fun goToSubscribe8(view: View){
 
-        val intent = Intent(this, SubscriptionScreen7::class.java)
+        val intent = Intent(this, SubscriptionScreen8::class.java)
         startActivity(intent)
-
     }
 }

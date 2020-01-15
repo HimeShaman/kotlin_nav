@@ -16,8 +16,13 @@
     <string name="subscription3_text1">Quel âge as-tu ?</string>
     <string name="subscription4_text1">Quelle est ton adresse mail ?</string>
     <string name="subscription4_text2">J’aimerais recevoir des informations promotionnelles, notamment des enquêtes, des messages sympas et beaucoup d’amour de la part de Safe on feet, via email.</string>
-    <string name="subscription5_text1">Crée ton mot de passe</string><string name="subscription5_text2">Votre mot de passe doit comporter 8 caractères ou plus. Essayez de le rallonger ou d’ajouter des symboles, tels que !, #, ou %.</string>
+    <string name="subscription5_text1">Crée ton mot de passe</string>
+    <string name="subscription5_text2">Votre mot de passe doit comporter 8 caractères ou plus. Essayez de le rallonger ou d’ajouter des symboles, tels que !, #, ou %.</string>
+    <string name="subscription5_text3">Votre mot de passe doit comporter 8 caractères ou plus. Essayez de le rallonger ou d’ajouter des symboles, tels que !, #, ou %.</string>
     <string name="subscription6_text1">Ajoute ta photo de profil</string>
+    <string name="subscribe7_text1">Ajoute ta description</string>
+    <string name="subscription8_text1">Plus qu\'une étape !</string>
+    <string name="subscription8_text2">Ajoute ta carte d\'identité</string>
 
     <!-- input hints -->
     <string name="first_name_hint">Prénom</string>
@@ -25,12 +30,19 @@
     <string name="age_hint">Age</string>
     <string name="email_hint">Email</string>
     <string name="password_hint">Mot de passe</string>
+    <string name="bio_hint">Quelques mots pour te décrire...</string>
+
+    <!-- Img descriptions -->
+    <string name="contentdescription_profilepicture">Photo de profil</string>
+    <string name="contentdescription_cbpicture">Carte d\'identité</string>
 
     <!-- Errors -->
     <string name="error_emptyInput">Veuillez remplir tous les champs.</string>
     <string name="error_invalidAge">Vous devez avoir 16 ans minimum pour vous inscrire.</string>
     <string name="error_invalidEmail">Veuillez entrer une adresse e-mail valide.</string>
     <string name="error_shortPassword">Votre mot de passe doit faire minimum 8 caractères.</string>
-    <string name="subscribe5_text2">Votre mot de passe doit comporter 8 caractères ou plus. Essayez de le rallonger ou d’ajouter des symboles, tels que !, #, ou %.</string>
+    <string name="subscription9_text1">FÉLICITATIONS !</string>
+    <string name="subscription9_text2">Notre équipe va vérifier votre identité dans les 24 heures.  Veuillez confirmer votre adresse en ouvrant le lien envoyé par mail.</string>
+    <string name="contentdescription_background">background</string>
 
 </resources>
