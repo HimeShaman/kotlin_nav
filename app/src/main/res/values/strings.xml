@@ -7,6 +7,7 @@
     <string name="str_button_next">Suivant</string>
     <string name="str_button_male">Un homme</string>
     <string name="str_button_female">Une femme</string>
+    <string name="str_button_sendemail">Renvoyez-moi un email</string>
 
     <!-- Subscription texts -->
     <string name="subscription1_text1">Oh salut, on ne se connaît pas !</string>
