@@ -162,7 +162,6 @@
             android:layout_width="409dp"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            android:gravity="start"
             app:backgroundTint="@color/colorWhite"
             app:fabAlignmentMode="center"
             app:fabCradleMargin="10dp"
