@@ -24,12 +24,6 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-
-        val sharedPreferences = getSharedPreferences("profilePreferences", 0)
-        val firstName = sharedPreferences.getString("firstName", "")
-
-        val textView : TextView = findViewById(R.id.text_view_alert)
-        textView.text = firstName
     }
 
     private val usersService:UsersService = AppServiceFactory().getUserLoginService()

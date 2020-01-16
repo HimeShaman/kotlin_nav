@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import com.equipe4.apptest.R
 import com.equipe4.apptest.LoginActivity
+import com.equipe4.apptest.UserProfileActivity
 
 class SubscriptionScreen9 : AppCompatActivity() {
 
@@ -22,8 +23,13 @@ class SubscriptionScreen9 : AppCompatActivity() {
         editor.apply()
     }
 
-    fun goToConnexion(view: View) {
-        val intent = Intent(this, LoginActivity::class.java)
+    fun goToUserProfile(view: View) {
+        val intent = Intent(this, UserProfileActivity::class.java)
         startActivity(intent)
     }
+
+    /*fun goToConnexion(view: View) {
+        val intent = Intent(this, LoginActivity::class.java)
+        startActivity(intent)
+    }*/
 }
