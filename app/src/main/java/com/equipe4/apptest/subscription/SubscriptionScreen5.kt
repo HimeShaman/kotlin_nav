@@ -12,6 +12,8 @@ class SubscriptionScreen5 : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        getActionBar()?.hide()
+        getSupportActionBar()?.hide()
         setContentView(R.layout.activity_subscription_screen5)
     }
 

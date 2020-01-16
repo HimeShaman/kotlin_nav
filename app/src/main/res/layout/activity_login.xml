@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_gradient"
+    android:background="@drawable/gradient"
     tools:context=".LoginActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -24,9 +24,9 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="38dp"
             android:onClick="login"
-            android:paddingLeft="24dp"
+            android:paddingLeft="32dp"
             android:paddingTop="8dp"
-            android:paddingRight="24dp"
+            android:paddingRight="32dp"
             android:paddingBottom="8dp"
             android:text="@string/str_button_login"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -38,6 +38,8 @@
             style="@style/TextInput"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
             android:layout_marginBottom="16dp"
             android:hint="@string/password_hint"
             android:paddingLeft="50dp"
@@ -62,6 +64,8 @@
             style="@style/TextInput"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
             android:layout_marginBottom="8dp"
             android:hint="@string/email_hint"
             android:paddingLeft="50dp"
