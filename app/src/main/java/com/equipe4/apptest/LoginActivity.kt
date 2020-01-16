@@ -14,6 +14,9 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
+import android.widget.TextView
+import org.w3c.dom.Text
+
 class LoginActivity : AppCompatActivity() {
 
 
@@ -21,6 +24,12 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+
+        val sharedPreferences = getSharedPreferences("profilePreferences", 0)
+        val firstName = sharedPreferences.getString("firstName", "")
+
+        val textView : TextView = findViewById(R.id.text_view_alert)
+        textView.text = firstName
     }
 
     private val usersService:UsersService = AppServiceFactory().getUserLoginService()
@@ -33,7 +42,7 @@ class LoginActivity : AppCompatActivity() {
                     if (textInputEditText_Login_email.text.toString() != response.body()?.email
                         || textInputEditText_Login_password.text.toString() != response.body()?.password ){
                         Toast.makeText(applicationContext,getString(R.string.str_login_false), Toast.LENGTH_LONG).show()
-                    }else {
+                    } else {
                         val intent = Intent(this@LoginActivity, JourneyScreen1::class.java)
                         startActivity(intent)
                         finish()
