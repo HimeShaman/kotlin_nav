@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.equipe4.apptest.journey.JourneyScreen1
 import com.equipe4.apptest.subscription.SubscriptionScreen1
 
 
@@ -24,5 +25,10 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, LoginActivity::class.java)
         startActivity(intent)
         finish()
+    }
+
+    fun goToJourneyScreen(view: View) {
+        val intent = Intent(this, JourneyScreen1::class.java)
+        startActivity(intent)
     }
 }
