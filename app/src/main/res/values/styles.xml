@@ -18,7 +18,7 @@
         <item name="boxBackgroundColor">@color/colorPrimary</item>
     </style>
     <!-- Splash screen theme -->
-    <style name="AppTheme.SplashScreen" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="AppTheme.Loading" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimaryDark">@color/darkBlue</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
