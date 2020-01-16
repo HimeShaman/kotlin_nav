@@ -5,6 +5,7 @@
     <string name="app_description">Enfin une application sociale qui permet de ne plus rentrer seul !</string>
     <string name="title_activity_maps">Map</string>
     <string name="splash_screen">Splash Screen</string>
+    <string name="str_button_search">Rechercher</string>
 
     <!-- Buttons -->
     <string name="str_button_subscribe">Inscription</string>
@@ -30,8 +31,17 @@
     <string name="subscription8_text2">Ajoute ta carte d\'identité</string>
 
 
+    <!-- Journey texts -->
+    <string name="str_journey_start_short">Départ</string>
+
     <!-- Messaging texts-->
     <string name="message_list">Messagerie</string>
+    <string name="str_journey_start">Point de départ</string>
+    <string name="str_journey_end">Point d\'arrivée</string>
+    <string name="journey_option_1">Train</string>
+    <string name="journey_option_2">Bus</string>
+    <string name="journey_option_3">Métro</string>
+    <string name="journey_option_4">Tram</string>
 
     <!-- input hints -->
     <string name="first_name_hint">Prénom</string>
@@ -56,13 +66,9 @@
     <string name="str_button_login">Connexion</string>
     <string name="str_login_false">Es-tu sur de tes identifiants ?</string>
     <string name="str_login_failed">Désolé ! Nous rencontrons un problème :(</string>
-    <string name="str_journey_start">Point de départ</string>
-    <string name="str_journey_end">Point d\'arrivée</string>
-    <string name="journey_option_1">Train</string>
-    <string name="journey_option_2">Bus</string>
-    <string name="journey_option_3">Métro</string>
-    <string name="journey_option_4">Tram</string>
-    <string name="str_button_search">Rechercher</string>
     <string name="contentdescription_checkpicture" />
+    <string name="str_journey_end_short">Arrivée</string>
+    <string name="str_journey_results">Trajets les plus rapides</string>
+
 
 </resources>

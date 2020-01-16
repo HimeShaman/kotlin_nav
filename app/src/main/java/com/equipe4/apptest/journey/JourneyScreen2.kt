@@ -27,7 +27,7 @@ class JourneyScreen2 : AppCompatActivity() {
         val searchedJourney = intent.getParcelableExtra<JourneySearch>(JOURNEY_SEARCH_EXTRA)
 
         if(searchedJourney is JourneySearch){
-            textView22_test.text = searchedJourney.toString()
+//            textView22_test.text = searchedJourney.toString()
         }
     }
 
