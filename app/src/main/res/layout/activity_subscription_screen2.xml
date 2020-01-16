@@ -10,9 +10,10 @@
 
     <TextView
         android:id="@+id/textView5"
+        style="@style/NunitoSemi22"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="124dp"
         android:text="@string/subscription2_text1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,8 +46,9 @@
 
     <TextView
         android:id="@+id/textView6"
+        style="@style/NunitoSemi22"
         android:layout_width="wrap_content"
-        android:layout_height="19dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="62dp"
         android:layout_marginBottom="62dp"
         android:text="@string/subscription2_text2"

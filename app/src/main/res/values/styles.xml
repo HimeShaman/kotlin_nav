@@ -12,10 +12,14 @@
         <item name="backgroundTint">?attr/colorPrimary</item>
     </style>
     <style name="TextInput" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
-        <item name="hintTextColor">@color/colorWhite</item>
+        <item name="hintTextColor">@color/pink</item>
+        <item name="android:textColorHint">@color/pink</item>
+        <item name="android:textColor">@color/colorWhite</item>
         <item name="boxBackgroundMode">none</item>
         <item name="android:background">@drawable/text_view_background</item>
         <item name="android:layout_height">68dp</item>
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
     </style>
     <style name="TextArea" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
         <item name="boxBackgroundColor">@color/colorPrimary</item>
