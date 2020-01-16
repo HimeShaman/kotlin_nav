@@ -9,7 +9,8 @@ import android.view.MenuItem
 import com.equipe4.apptest.subscription.SubscriptionScreen1
 import kotlinx.android.synthetic.main.activity_main.*
 
-import android.widget.Toast
+import com.equipe4.apptest.messaging.MessagerieList
+import com.equipe4.apptest.UserProfileActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -26,12 +27,14 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+
+        val profileIntent = Intent(this, UserProfileActivity::class.java)
+        val messageIntent = Intent(this, MessagerieList::class.java)
+
         when (item!!.itemId) {
-            R.id.app_bar_profile -> Toast.makeText(this, "profile item is clicked!", Toast.LENGTH_LONG).show()
-            R.id.app_bar_messages -> Toast.makeText(this, "messages item is clicked!", Toast.LENGTH_LONG).show()
-
+            R.id.app_bar_profile -> startActivity(profileIntent)
+            R.id.app_bar_messages -> startActivity(messageIntent)
         }
-
         return true
     }
 
