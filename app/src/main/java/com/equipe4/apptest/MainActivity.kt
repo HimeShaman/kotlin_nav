@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         getActionBar()?.hide()
         getSupportActionBar()?.hide()
-        setContentView(R.layout.messagerie_list)
+        setContentView(R.layout.activity_main)
     }
 
     fun goToSubscribe1(view: View){
