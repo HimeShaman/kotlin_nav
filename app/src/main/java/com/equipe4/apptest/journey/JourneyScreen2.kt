@@ -7,15 +7,21 @@ import android.os.Bundle
 import android.widget.Toast
 import android.view.Menu
 import android.view.MenuItem
+import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.equipe4.apptest.R
 import com.equipe4.apptest.network.nomatim.NominatimResult
 import com.equipe4.apptest.network.nomatim.NominatimServiceFactory
 import com.equipe4.apptest.UserProfileActivity
+import com.equipe4.apptest.journey.item.JourneyItem
 import com.equipe4.apptest.messaging.MessagerieList
 import com.equipe4.apptest.network.app.AppServiceFactory
 import com.equipe4.apptest.network.navitia.NavitiaServiceFactory
 import com.equipe4.apptest.network.navitia.models.journeys.Journey
 import com.equipe4.apptest.network.navitia.models.journeys.JourneyResult
+import com.mikepenz.fastadapter.FastAdapter
+import com.mikepenz.fastadapter.adapters.ItemAdapter
 import kotlinx.android.synthetic.main.activity_journey_screen1.*
 import kotlinx.android.synthetic.main.activity_journey_screen2.*
 import retrofit2.Call
@@ -97,9 +103,21 @@ class JourneyScreen2 : AppCompatActivity() {
                                                 finish()
                                                 return
                                             }
-                                            println("YAY")
-                                            println(response)
+
+                                            //BUILDING JOURNEYS LIST
+                                            val itemAdapter = ItemAdapter<JourneyItem>()
+                                            val journeyResult = response.body()
+                                            if(journeyResult is JourneyResult) {
+                                                itemAdapter.add(journeyResult.journeys.map {JourneyItem(it)})
+                                            }
+                                            val fastAdapter = FastAdapter.with(itemAdapter)
+                                            journey_recycler_view.layoutManager = LinearLayoutManager(this@JourneyScreen2)
+
+                                            journey_recycler_view.addItemDecoration(DividerItemDecoration(this@JourneyScreen2, RecyclerView.VERTICAL))
+
+                                            journey_recycler_view.adapter = fastAdapter
                                         }
+
 
                                         //IF NAVITIA JOURNEY REQUEST FAILS
                                         override fun onFailure(call: Call<JourneyResult>,t: Throwable) {

@@ -75,5 +75,10 @@
     <string name="str_journey_empty_search_error">Il semble que vous n\'ayez pas rempli tous les champs</string>
     <string name="str_journey_navitia_error">Oops ! Nous avons rencontré un problème</string>
     <string name="str_journey_navitia_nojourney_error">Désolé, nous n\'avons pas trouvé de trajet :(</string>
+    <string name="journey_section1">section1</string>
+    <string name="journey_section2">section2</string>
+    <string name="journey_section3">section3</string>
+    <string name="journey_section4">section4</string>
+    <string name="journey_section5">section5</string>
 
 </resources>
