@@ -16,7 +16,7 @@ class SubscriptionScreen7 : AppCompatActivity() {
     }
 
     fun goToSubscribe8(view: View){
-        val bio : String = textInputEditText_bio.toString()
+        val bio : String = textInputEditText_bio.text.toString()
         val email : String? = intent.getStringExtra("email")
         val firstName : String? = intent.getStringExtra("firstName")
         val lastName : String? = intent.getStringExtra("lastName")
