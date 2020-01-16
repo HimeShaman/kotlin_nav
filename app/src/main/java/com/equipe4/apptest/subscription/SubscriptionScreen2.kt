@@ -32,7 +32,8 @@ class SubscriptionScreen2 : AppCompatActivity() {
         startActivity(intent)
     }
 
-    fun femaleGoToSubscribe3(view: View){
+    fun femaleGoToSubscribe3(view: View) {
+        
         val gender = "Femme"
         val firstName : String? = intent.getStringExtra("firstName")
         val lastName : String? = intent.getStringExtra("lastName")
@@ -43,5 +44,6 @@ class SubscriptionScreen2 : AppCompatActivity() {
         intent.putExtra("firstName", firstName)
         intent.putExtra("lastName", lastName)
 
+        startActivity(intent)
     }
 }
