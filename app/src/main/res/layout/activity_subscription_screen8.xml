@@ -38,8 +38,9 @@
             android:background="@android:color/transparent"
             android:contentDescription="@string/contentdescription_cbpicture"
             android:src="@drawable/subscription8_img"
-            app:layout_constraintTop_toBottomOf="@+id/textView14"
-            tools:layout_editor_absoluteX="119dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
         <TextView
             android:id="@+id/textView14"
