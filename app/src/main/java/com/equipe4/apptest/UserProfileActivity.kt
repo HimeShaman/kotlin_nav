@@ -24,15 +24,11 @@ class UserProfileActivity : AppCompatActivity() {
         val bio = sharedPreferences.getString("bio", "")
 
         val nameTextView : TextView = findViewById(R.id.text_view_name)
-        val genderTextView : TextView = findViewById(R.id.text_view_gender)
         val ageTextView : TextView = findViewById(R.id.text_view_age)
-        val emailTextView : TextView = findViewById(R.id.text_view_email)
         val bioTextView : TextView = findViewById(R.id.text_view_bio)
 
         nameTextView.text = firstName.plus(lastName).plus(", ")
-        genderTextView.text = gender
-        ageTextView.text = age
-        emailTextView.text = email
+        ageTextView.text = age.plus(" ans")
         bioTextView.text = bio
 
         setSupportActionBar(bottom_bar)

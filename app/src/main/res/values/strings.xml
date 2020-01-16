@@ -70,5 +70,6 @@
     <string name="error_shortPassword">Votre mot de passe doit faire minimum 8 caractères.</string>
     <string name="str_login_false">Es-tu sur de tes identifiants ?</string>
     <string name="str_login_failed">Désolé ! Nous rencontrons un problème :(</string>
+    <string name="str_button_modify">Modifier</string>
 
 </resources>
