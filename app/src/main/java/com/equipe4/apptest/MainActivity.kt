@@ -6,17 +6,15 @@ import android.os.Bundle
 import android.view.View
 import android.view.Menu
 import com.equipe4.apptest.subscription.SubscriptionScreen1
+import kotlinx.android.synthetic.main.activity_main.*
 
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        setActionBar(findViewById(R.id.bottom_bar))
-
         setContentView(R.layout.activity_main)
-
+        setSupportActionBar(bottom_bar)
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
