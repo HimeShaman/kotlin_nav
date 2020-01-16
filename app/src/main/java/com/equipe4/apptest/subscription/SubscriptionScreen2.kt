@@ -33,7 +33,7 @@ class SubscriptionScreen2 : AppCompatActivity() {
     }
 
     fun femaleGoToSubscribe3(view: View) {
-        
+
         val gender = "Femme"
         val firstName : String? = intent.getStringExtra("firstName")
         val lastName : String? = intent.getStringExtra("lastName")
