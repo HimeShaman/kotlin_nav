@@ -1,6 +1,6 @@
 package com.equipe4.apptest.network.navitia
 
-import com.equipe4.apptest.network.navitia.models.LinesResult
+import com.equipe4.apptest.network.navitia.models.lines.LinesResult
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Header

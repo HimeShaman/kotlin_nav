@@ -1,4 +1,4 @@
-package com.equipe4.apptest.network.navitia.models
+package com.equipe4.apptest.network.navitia.models.lines
 
 import com.google.gson.annotations.SerializedName
 

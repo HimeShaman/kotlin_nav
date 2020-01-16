@@ -1,4 +1,4 @@
-package com.equipe4.apptest.network.navitia.models
+package com.equipe4.apptest.network.navitia.models.lines
 
 data class Lines (
     val code:String,
