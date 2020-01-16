@@ -10,10 +10,5 @@ class SubscriptionScreen9 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_subscription_screen9)
-
-        val bio = intent.getStringExtra("bio")
-        val view = findViewById(R.id.text_view_alert) as TextView
-        view.text = bio
-
     }
 }

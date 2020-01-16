@@ -23,6 +23,7 @@ class SubscriptionScreen4 : AppCompatActivity() {
         val email = textInputEditText_email.text.toString()
         val firstName : String? = intent.getStringExtra("firstName")
         val lastName : String? = intent.getStringExtra("lastName")
+        val gender : String? = intent.getStringExtra("gender")
         val age : String? = intent.getStringExtra("age")
 
 //        Checks if email isn't empty and is in right format
@@ -40,10 +41,11 @@ class SubscriptionScreen4 : AppCompatActivity() {
         if(email.isNotEmpty() && android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
             val intent = Intent(this, SubscriptionScreen5::class.java)
 
-            intent.putExtra("email", email)
-            intent.putExtra("age", age)
             intent.putExtra("firstName", firstName)
             intent.putExtra("lastName", lastName)
+            intent.putExtra("gender", gender)
+            intent.putExtra("age", age)
+            intent.putExtra("email", email)
 
             startActivity(intent)
         }

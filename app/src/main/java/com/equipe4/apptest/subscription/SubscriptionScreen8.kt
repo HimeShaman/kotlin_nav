@@ -15,19 +15,21 @@ class SubscriptionScreen8 : AppCompatActivity() {
 
     fun goToSubscribe9 (view: View){
 
-        val bio : String? = intent.getStringExtra("bio")
-        val email : String? = intent.getStringExtra("email")
         val firstName : String? = intent.getStringExtra("firstName")
         val lastName : String? = intent.getStringExtra("lastName")
+        val gender : String? = intent.getStringExtra("gender")
         val age : String? = intent.getStringExtra("age")
+        val email : String? = intent.getStringExtra("email")
+        val bio : String? = intent.getStringExtra("bio")
 
         val intent = Intent(this, SubscriptionScreen9::class.java)
 
-        intent.putExtra("bio", bio)
-        intent.putExtra("email", email)
-        intent.putExtra("age", age)
         intent.putExtra("firstName", firstName)
         intent.putExtra("lastName", lastName)
+        intent.putExtra("gender", gender)
+        intent.putExtra("age", age)
+        intent.putExtra("email", email)
+        intent.putExtra("bio", bio)
 
         startActivity(intent)
     }

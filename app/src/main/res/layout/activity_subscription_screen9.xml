@@ -16,8 +16,10 @@
         android:contentDescription="@string/contentdescription_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/subscription9_img2" />
 
     <Button
@@ -35,8 +37,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
+        android:layout_marginBottom="64dp"
         android:contentDescription="@string/contentdescription_checkpicture"
         android:src="@drawable/subscription9_img"
+        app:layout_constraintBottom_toTopOf="@+id/text_view_alert"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView17" />
@@ -46,20 +50,18 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
-        android:layout_marginTop="34dp"
         android:layout_marginEnd="64dp"
-        android:layout_marginBottom="34dp"
+        android:layout_marginBottom="24dp"
         android:text="@string/subscription9_text2"
         app:layout_constraintBottom_toTopOf="@+id/button7"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="64dp"
         android:text="@string/subscription9_text1"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/imageView3"
@@ -70,7 +72,7 @@
         android:id="@+id/button7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="18dp"
         android:text="@string/str_button_login"
         app:layout_constraintBottom_toTopOf="@+id/button6"
         app:layout_constraintEnd_toEndOf="parent"

@@ -24,6 +24,7 @@ class SubscriptionScreen3 : AppCompatActivity() {
         val ageInput : String = textInputEditText_age.text.toString()
         val firstName : String? = intent.getStringExtra("firstName")
         val lastName : String? = intent.getStringExtra("lastName")
+        val gender : String? = intent.getStringExtra("gender")
 
 
 //        Checks if age is empty to display error
@@ -52,6 +53,7 @@ class SubscriptionScreen3 : AppCompatActivity() {
                 intent.putExtra("age", ageInput)
                 intent.putExtra("firstName", firstName)
                 intent.putExtra("lastName", lastName)
+                intent.putExtra("gender", gender)
 
                 startActivity(intent)
             }
