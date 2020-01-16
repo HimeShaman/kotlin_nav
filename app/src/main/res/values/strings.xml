@@ -33,11 +33,11 @@
     <string name="message_list">Messagerie</string>
 
     <!-- input hints -->
-    <string name="first_name_hint">Prénom</string>
-    <string name="last_name_hint">Nom</string>
-    <string name="age_hint">Age</string>
-    <string name="email_hint">Email</string>
-    <string name="password_hint">Mot de passe</string>
+    <string name="first_name_hint">PRENOM</string>
+    <string name="last_name_hint">NOM</string>
+    <string name="age_hint">AGE</string>
+    <string name="email_hint">EMAIL</string>
+    <string name="password_hint">MOT DE PASSE</string>
     <string name="bio_hint">Quelques mots pour te décrire...</string>
 
     <!-- Img descriptions -->

@@ -15,7 +15,7 @@
         <item name="hintTextColor">@color/colorWhite</item>
         <item name="boxBackgroundMode">none</item>
         <item name="android:background">@drawable/text_view_background</item>
-        <item name="android:layout_height">64dp</item>
+        <item name="android:layout_height">68dp</item>
     </style>
     <style name="TextArea" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
         <item name="boxBackgroundColor">@color/colorPrimary</item>
