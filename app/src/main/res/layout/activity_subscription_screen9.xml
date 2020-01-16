@@ -37,7 +37,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
-            android:onClick="goToUserProfile"
+            android:onClick="goToConnexion"
             android:paddingLeft="32dp"
             android:paddingTop="8dp"
             android:paddingRight="32dp"

@@ -36,13 +36,8 @@ class SubscriptionScreen9 : AppCompatActivity() {
         editor.apply()
     }
 
-    fun goToUserProfile(view: View) {
-        val intent = Intent(this, UserProfileActivity::class.java)
-        startActivity(intent)
-    }
-
-    /*fun goToConnexion(view: View) {
+    fun goToConnexion(view: View) {
         val intent = Intent(this, LoginActivity::class.java)
         startActivity(intent)
-    }*/
+    }
 }
