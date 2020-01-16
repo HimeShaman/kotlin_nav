@@ -5,6 +5,9 @@ import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.equipe4.apptest.R
 import kotlinx.android.synthetic.main.messagerie_list.*
+import android.view.Menu
+
+import android.view.MenuInflater
 
 class MessagerieList : AppCompatActivity(){
 
@@ -16,6 +19,7 @@ class MessagerieList : AppCompatActivity(){
         recyclerView_messagerieList.layoutManager = LinearLayoutManager(this)
         recyclerView_messagerieList.adapter = MessagerieAdapter()
 
-        setSupportActionBar(findViewById(R.id.bottom_bar_layout))
     }
+
+
 }
