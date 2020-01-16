@@ -1,4 +1,4 @@
-package com.equipe4.apptest.network.navitia
+package com.equipe4.apptest.network.navitia.services
 
 import com.equipe4.apptest.network.navitia.models.lines.LinesResult
 import retrofit2.Call

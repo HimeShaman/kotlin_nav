@@ -70,6 +70,9 @@
     <string name="error_shortPassword">Votre mot de passe doit faire minimum 8 caractères.</string>
     <string name="str_login_false">Es-tu sur de tes identifiants ?</string>
     <string name="str_login_failed">Désolé ! Nous rencontrons un problème :(</string>
-    <string name="str_journey_nominatim_error">Nous n\'avons pas pu localiser vos points de départ et d\'arrivée :(</string>
+    <string name="str_journey_nominatim_error">Nous n\'arrivons pas à localiser vos adresses :(</string>
+    <string name="str_journey_empty_search_error">Il semble que vous n\'ayez pas rempli tous les champs</string>
+    <string name="str_journey_navitia_error">Oops ! Nous avons rencontré un problème</string>
+    <string name="str_journey_navitia_nojourney_error">Désolé, nous n\'avons pas trouvé de trajet :(</string>
 
 </resources>
