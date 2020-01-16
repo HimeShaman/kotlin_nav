@@ -18,8 +18,19 @@ class SubscriptionScreen9 : AppCompatActivity() {
         val editor = sharedPreferences!!.edit()
 
         val firstName : String? = intent.getStringExtra("firstName")
+        val lastName : String? = intent.getStringExtra("lastName")
+        val gender : String? = intent.getStringExtra("gender")
+        val age : String? = intent.getStringExtra("age")
+        val email : String? = intent.getStringExtra("email")
+        val bio : String? = intent.getStringExtra("bio")
 
         editor.putString("firstName", firstName)
+        editor.putString("lastName", lastName)
+        editor.putString("gender", gender)
+        editor.putString("age", age)
+        editor.putString("email", email)
+        editor.putString("bio", bio)
+
         editor.apply()
     }
 

@@ -17,21 +17,9 @@ class SubscriptionScreen2 : AppCompatActivity() {
     //TODO : finish() previous activity
     //TODO : send inputs to next activity
 
-    fun femaleGoToSubscribe3(view: View){
-        val gender : String = "female"
-        val firstName : String? = intent.getStringExtra("firstName")
-        val lastName : String? = intent.getStringExtra("lastName")
-
-        val intent = Intent(this, SubscriptionScreen3::class.java)
-
-        intent.putExtra("gender", gender)
-        intent.putExtra("firstName", firstName)
-        intent.putExtra("lastName", lastName)
-
-    }
 
     fun maleGoToSubscribe3(view: View) {
-        val gender : String = "male"
+        val gender = "Homme"
         val firstName : String? = intent.getStringExtra("firstName")
         val lastName : String? = intent.getStringExtra("lastName")
 
@@ -42,6 +30,18 @@ class SubscriptionScreen2 : AppCompatActivity() {
         intent.putExtra("lastName", lastName)
 
         startActivity(intent)
+    }
+
+    fun femaleGoToSubscribe3(view: View){
+        val gender = "Femme"
+        val firstName : String? = intent.getStringExtra("firstName")
+        val lastName : String? = intent.getStringExtra("lastName")
+
+        val intent = Intent(this, SubscriptionScreen3::class.java)
+
+        intent.putExtra("gender", gender)
+        intent.putExtra("firstName", firstName)
+        intent.putExtra("lastName", lastName)
 
     }
 }
