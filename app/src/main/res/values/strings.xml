@@ -5,6 +5,7 @@
     <string name="app_description">Enfin une application sociale qui permet de ne plus rentrer seul !</string>
     <string name="title_activity_maps">Map</string>
     <string name="splash_screen">Splash Screen</string>
+    <string name="connexion">Connexion</string>
     <string name="str_button_search">Rechercher</string>
 
     <!-- Buttons -->
