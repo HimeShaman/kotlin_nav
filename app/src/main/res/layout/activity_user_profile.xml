@@ -7,40 +7,13 @@
     tools:context=".UserProfileActivity">
 
     <TextView
-        android:id="@+id/text_view_firstName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/text_view_lastName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_view_firstName" />
-
-    <TextView
         android:id="@+id/text_view_gender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_view_lastName" />
-
-    <TextView
-        android:id="@+id/text_view_age"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_view_gender" />
+        tools:layout_editor_absoluteY="39dp" />
 
     <TextView
         android:id="@+id/text_view_email"
@@ -60,11 +33,57 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_view_email" />
 
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="489dp"
+        android:layout_height="430dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profile_img" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="557dp"
+        android:layout_height="507dp"
+        android:layout_marginTop="459dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background_profile" />
+
+    <TextView
+        android:id="@+id/text_view_age"
+        style="@style/NunitoSemi18White"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="65dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/text_view_name"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/text_view_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="58dp"
+        android:text="TextView"
+        style="@style/NunitoBold24White"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/coordinator_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.bottomappbar.BottomAppBar
             android:id="@+id/bottom_bar"
@@ -75,17 +94,16 @@
             android:gravity="start"
             app:backgroundTint="@color/colorWhite"
             app:fabAlignmentMode="center"
-            app:fabCradleMargin="10dp"
-            />
+            app:fabCradleMargin="10dp" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:src="@drawable/bottom_bar_floating_button"
             app:backgroundTint="@color/red"
             app:layout_anchor="@id/bottom_bar"
-            app:tint="@color/colorWhite"
-            android:src="@drawable/bottom_bar_floating_button"/>
+            app:tint="@color/colorWhite" />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -175,7 +175,6 @@
             app:layout_anchor="@id/bottom_bar"
             app:tint="@color/colorWhite"
             android:src="@drawable/bottom_bar_floating_button"/>
-
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
