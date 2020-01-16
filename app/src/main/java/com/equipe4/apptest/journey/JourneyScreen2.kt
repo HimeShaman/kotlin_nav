@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.equipe4.apptest.R
 import kotlinx.android.synthetic.main.activity_journey_screen2.*
-import java.security.AccessControlContext
 
 class JourneyScreen2 : AppCompatActivity() {
 
@@ -27,7 +26,8 @@ class JourneyScreen2 : AppCompatActivity() {
         val searchedJourney = intent.getParcelableExtra<JourneySearch>(JOURNEY_SEARCH_EXTRA)
 
         if(searchedJourney is JourneySearch){
-//            textView22_test.text = searchedJourney.toString()
+            editText_input_searched_journey_start.setText(searchedJourney.startPoint)
+            editText_input_searched_journey_end.setText(searchedJourney.endPoint)
         }
     }
 

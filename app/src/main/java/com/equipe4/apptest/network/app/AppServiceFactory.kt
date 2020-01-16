@@ -3,7 +3,6 @@ package com.equipe4.apptest.network.app
 import com.equipe4.apptest.network.app.users.UsersService
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import retrofit2.create
 
 class AppServiceFactory {
 
