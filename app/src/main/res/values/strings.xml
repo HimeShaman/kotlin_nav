@@ -58,8 +58,10 @@
     <!-- Img descriptions -->
     <string name="contentdescription_profilepicture">Photo de profil</string>
     <string name="contentdescription_cbpicture">Carte d\'identité</string>
+    <string name="contentdescription_backgroundpicture">background</string>
     <string name="contentdescription_checkpicture" />
-    <string name="contentdescription_background">background</string>
+    <string name="str_bottombar_messages">messages</string>
+    <string name="str_bottombar_profile">profile</string>
 
     <!-- Errors -->
     <string name="error_emptyInput">Veuillez remplir tous les champs.</string>

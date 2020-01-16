@@ -15,5 +15,7 @@ class MessagerieList : AppCompatActivity(){
         //recyclerView_messagerieList.setBackgroundColor(Color.BLUE)
         recyclerView_messagerieList.layoutManager = LinearLayoutManager(this)
         recyclerView_messagerieList.adapter = MessagerieAdapter()
+
+        setSupportActionBar(findViewById(R.id.bottom_bar_layout))
     }
 }
