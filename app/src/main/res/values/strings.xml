@@ -63,5 +63,6 @@
     <string name="journey_option_3">Métro</string>
     <string name="journey_option_4">Tram</string>
     <string name="str_button_search">Rechercher</string>
+    <string name="contentdescription_checkpicture" />
 
 </resources>

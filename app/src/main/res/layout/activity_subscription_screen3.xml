@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_gradient_shapes"
     tools:context=".subscription.SubscriptionScreen3">
 
     <TextView
@@ -28,6 +29,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout3"
         style="@style/TextInput"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -45,6 +47,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/age_hint"
             android:inputType="number" />
+
     </com.google.android.material.textfield.TextInputLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

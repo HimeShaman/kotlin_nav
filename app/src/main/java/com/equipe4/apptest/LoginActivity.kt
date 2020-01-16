@@ -14,6 +14,9 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
+import android.widget.TextView
+import org.w3c.dom.Text
+
 class LoginActivity : AppCompatActivity() {
 
 
@@ -33,7 +36,7 @@ class LoginActivity : AppCompatActivity() {
                     if (textInputEditText_Login_email.text.toString() != response.body()?.email
                         || textInputEditText_Login_password.text.toString() != response.body()?.password ){
                         Toast.makeText(applicationContext,getString(R.string.str_login_false), Toast.LENGTH_LONG).show()
-                    }else {
+                    } else {
                         val intent = Intent(this@LoginActivity, JourneyScreen1::class.java)
                         startActivity(intent)
                         finish()

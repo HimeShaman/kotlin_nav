@@ -39,7 +39,11 @@ class SubscriptionScreen1 : AppCompatActivity() {
             textInputEditText_firstName.error = null
             textInputEditText_lastName.error = null
             val intent = Intent(this, SubscriptionScreen2::class.java)
+            intent.putExtra("firstName", firstName)
+            intent.putExtra("lastName", lastName)
             startActivity(intent)
+
+            finish()
         }
     }
 }

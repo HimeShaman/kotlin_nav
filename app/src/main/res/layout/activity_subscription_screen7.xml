@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_gradient_shapes"
     tools:context=".subscription.SubscriptionScreen7">
 
     <ImageView
@@ -19,7 +20,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/textInputEditText_bio"
         android:layout_width="0dp"
         android:layout_height="300dp"
         android:layout_marginStart="34dp"

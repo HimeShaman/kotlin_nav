@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.view.View
 import com.equipe4.apptest.R
 
+import android.widget.TextView
+
 class SubscriptionScreen6 : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,8 +17,20 @@ class SubscriptionScreen6 : AppCompatActivity() {
 
     fun goToSubscribe7(view: View){
 
-        val intent = Intent(this, SubscriptionScreen7::class.java)
-        startActivity(intent)
+        val firstName : String? = intent.getStringExtra("firstName")
+        val lastName : String? = intent.getStringExtra("lastName")
+        val gender : String? = intent.getStringExtra("gender")
+        val age : String? = intent.getStringExtra("age")
+        val email : String? = intent.getStringExtra("email")
 
+        val intent = Intent(this, SubscriptionScreen7::class.java)
+
+        intent.putExtra("firstName", firstName)
+        intent.putExtra("lastName", lastName)
+        intent.putExtra("gender", gender)
+        intent.putExtra("age", age)
+        intent.putExtra("email", email)
+
+        startActivity(intent)
     }
 }

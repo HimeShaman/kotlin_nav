@@ -11,8 +11,11 @@
     <style name="CustomButton" parent="Widget.MaterialComponents.Button">
         <item name="backgroundTint">?attr/colorPrimary</item>
     </style>
-    <style name="TextInput" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-        <item name="boxStrokeColor">@color/colorPrimary</item>
+    <style name="TextInput" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="hintTextColor">@color/colorWhite</item>
+        <item name="boxBackgroundMode">none</item>
+        <item name="android:background">@drawable/text_view_background</item>
+        <item name="android:layout_height">64dp</item>
     </style>
     <style name="TextArea" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
         <item name="boxBackgroundColor">@color/colorPrimary</item>
@@ -23,5 +26,11 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="android:windowDisablePreview">true</item>
+    </style>
+    <!-- Font styles -->
+    <style name="NunitoSemi22">
+        <item name="android:fontFamily">@font/nunito_semibold</item>
+        <item name="android:textSize">22dp</item>
+        <item name="android:textColor">@color/colorWhite</item>
     </style>
 </resources>
