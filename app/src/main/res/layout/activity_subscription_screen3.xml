@@ -48,7 +48,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/age_hint"
             android:inputType="number"
-            android:textColor="@color/colorWhite" />
+            style="@style/EditTextInput" />
 
     </com.google.android.material.textfield.TextInputLayout>
 

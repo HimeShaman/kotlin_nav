@@ -37,7 +37,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/password_hint"
             android:inputType="textPassword"
-            android:textColor="@color/colorWhite"/>
+            style="@style/EditTextInput"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
@@ -59,7 +59,7 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="200dp"
-        android:text="@string/subscription5_text3"
+        android:text="@string/subscription5_text2"
         style="@style/ProximaReg12"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -37,7 +37,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/email_hint"
             android:inputType="textEmailAddress"
-            android:textColor="@color/colorWhite"/>
+            style="@style/EditTextInput"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
