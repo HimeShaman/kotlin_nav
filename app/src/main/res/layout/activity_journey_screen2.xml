@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_gradient"
+    android:background="@drawable/gradient"
     tools:context=".journey.JourneyScreen2">
 
     <com.google.android.material.textfield.TextInputLayout
@@ -22,8 +22,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:prefixText="@string/str_journey_start_short"
-        app:prefixTextColor="@color/grey"
         app:prefixTextAppearance="@font/proximanova_regular"
+        app:prefixTextColor="@color/grey"
         app:startIconDrawable="@drawable/ic_search"
         app:startIconTint="@color/blue">
 
@@ -31,8 +31,8 @@
             android:id="@+id/editText_input_searched_journey_start"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/proximanova_regular"
             android:enabled="false"
+            android:fontFamily="@font/proximanova_regular"
             android:textColor="@color/blue" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -52,8 +52,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_input_searched_journey_start"
         app:prefixText="@string/str_journey_end_short"
-        app:prefixTextColor="@color/grey"
         app:prefixTextAppearance="@font/proximanova_regular"
+        app:prefixTextColor="@color/grey"
         app:startIconDrawable="@drawable/ic_search"
         app:startIconTint="@color/blue">
 
@@ -61,8 +61,8 @@
             android:id="@+id/editText_input_searched_journey_end"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/proximanova_regular"
             android:enabled="false"
+            android:fontFamily="@font/proximanova_regular"
             android:textColor="@color/blue" />
 
     </com.google.android.material.textfield.TextInputLayout>
