@@ -9,7 +9,7 @@
 
     <TextView
         android:id="@+id/textView2"
-        style="@style/NunitoSemi22"
+        style="@style/NunitoSemi22White"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_marginTop="124dp"
@@ -48,7 +48,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/age_hint"
             android:inputType="number"
-            android:textColor="@color/colorWhite" />
+            style="@style/EditTextInput" />
 
     </com.google.android.material.textfield.TextInputLayout>
 

@@ -21,6 +21,11 @@
         <item name="android:paddingStart">0dp</item>
         <item name="android:paddingEnd">0dp</item>
     </style>
+    <style name="EditTextInput">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:fontFamily">@font/proximanova_regular</item>
+    </style>
     <style name="TextArea" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
         <item name="boxBackgroundColor">@color/colorPrimary</item>
     </style>
@@ -32,19 +37,29 @@
         <item name="android:windowDisablePreview">true</item>
     </style>
     <!-- Font styles -->
-    <style name="NunitoSemi22">
+    <style name="NunitoSemi22White">
         <item name="android:fontFamily">@font/nunito_semibold</item>
         <item name="android:textSize">22dp</item>
         <item name="android:textColor">@color/colorWhite</item>
     </style>
-    <style name="ProximaReg12">
+    <style name="NunitoSemi22DarkBlue">
+        <item name="android:fontFamily">@font/nunito_semibold</item>
+        <item name="android:textSize">22dp</item>
+        <item name="android:textColor">@color/darkBlue</item>
+    </style>
+    <style name="ProximaReg16Blue">
         <item name="android:fontFamily">@font/proximanova_regular</item>
-        <item name="android:textSize">12dp</item>
-        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/blue</item>
     </style>
     <style name="ProximaReg16Grey">
         <item name="android:fontFamily">@font/proximanova_regular</item>
         <item name="android:textSize">16dp</item>
         <item name="android:textColor">@color/grey</item>
+    </style>
+    <style name="ProximaReg12">
+        <item name="android:fontFamily">@font/proximanova_regular</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/colorWhite</item>
     </style>
 </resources>

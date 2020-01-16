@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/app_bar_profile"
+        android:icon="@drawable/bottom_bar_profile"
+        android:title="@string/str_bottombar_profile"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/app_bar_messages"
+        android:icon="@drawable/bottom_bar_messages"
+        android:title="@string/str_bottombar_messages"
+        app:showAsAction="ifRoom"/>
+</menu>
