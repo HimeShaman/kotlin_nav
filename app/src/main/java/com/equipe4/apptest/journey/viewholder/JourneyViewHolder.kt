@@ -18,8 +18,7 @@ class JourneyViewHolder(itemView: View) : FastAdapter.ViewHolder<JourneyItem>(it
 
         val hours = journey.duration/3600
         val minutes = (journey.duration%3600)/60
-        val seconds = (journey.duration%60)
-        itemView.text_view_time.text = "${hours}h ${minutes}min ${seconds}s"
+        itemView.text_view_time.text = "${hours}h ${minutes}min"
 
         if(journey.sections.isNotEmpty()){
             val section1 = journey.sections.first()

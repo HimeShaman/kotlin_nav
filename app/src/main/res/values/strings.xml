@@ -29,7 +29,8 @@
     <string name="subscription6_text1">Ajoute ta photo de profil</string>
     <string name="subscribe7_text1">Ajoute ta description</string>
     <string name="subscription8_text1">Plus qu\'une étape !</string>
-    <string name="subscription8_text2">Ajoute ta carte d\'identité</string><string name="subscription9_text1">FÉLICITATIONS !</string>
+    <string name="subscription8_text2">Ajoute ta carte d\'identité</string>
+    <string name="subscription9_text1">FÉLICITATIONS !</string>
     <string name="subscription9_text2">Notre équipe va vérifier votre identité dans les 24 heures.  Veuillez confirmer votre adresse en ouvrant le lien envoyé par mail.</string>
 
 
