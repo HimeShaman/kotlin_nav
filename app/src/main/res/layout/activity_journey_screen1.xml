@@ -13,6 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:visibility="invisible"
         app:layout_constraintEnd_toStartOf="@+id/journey_checkbox2_bus"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,6 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/journey_option_1"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="@+id/journey_checkbox1_train"
         app:layout_constraintStart_toStartOf="@+id/journey_checkbox1_train"
         app:layout_constraintTop_toBottomOf="@+id/journey_checkbox1_train" />
@@ -33,6 +35,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:visibility="invisible"
         app:layout_constraintEnd_toStartOf="@+id/journey_checkbox3_metro"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/journey_checkbox1_train"
@@ -44,6 +47,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/journey_option_2"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="@+id/journey_checkbox2_bus"
         app:layout_constraintStart_toStartOf="@+id/journey_checkbox2_bus"
         app:layout_constraintTop_toBottomOf="@+id/journey_checkbox2_bus" />
@@ -53,6 +57,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:visibility="invisible"
         app:layout_constraintEnd_toStartOf="@+id/journey_checkbox4_tram"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/journey_checkbox2_bus"
@@ -64,6 +69,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/journey_option_3"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="@+id/journey_checkbox3_metro"
         app:layout_constraintStart_toStartOf="@+id/journey_checkbox3_metro"
         app:layout_constraintTop_toBottomOf="@+id/journey_checkbox3_metro" />
@@ -73,6 +79,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/journey_checkbox3_metro"
@@ -141,6 +148,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/journey_option_4"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="@+id/journey_checkbox4_tram"
         app:layout_constraintStart_toStartOf="@+id/journey_checkbox4_tram"
         app:layout_constraintTop_toBottomOf="@+id/journey_checkbox4_tram" />
@@ -160,6 +168,7 @@
         android:id="@+id/coordinator_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:visibility="invisible"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <com.google.android.material.bottomappbar.BottomAppBar
@@ -171,8 +180,7 @@
             android:gravity="start"
             app:backgroundTint="@color/colorWhite"
             app:fabAlignmentMode="center"
-            app:fabCradleMargin="10dp"
-            />
+            app:fabCradleMargin="10dp" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab"

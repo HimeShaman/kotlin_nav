@@ -59,11 +59,13 @@ class JourneyViewHolder(itemView: View) : FastAdapter.ViewHolder<JourneyItem>(it
 
     private fun buildSection(image: ImageView, text: TextView, section: Section){
         println(section)
-        image.visibility = View.VISIBLE
+
         if(section.mode == "walking"){
+            image.visibility = View.VISIBLE
             image.setImageResource(R.drawable.ic_walk)
             text.visibility = View.INVISIBLE
-        }else{
+        }else if(section.type == "public_transport"){
+            image.visibility = View.VISIBLE
             text.visibility = View.VISIBLE
             image.setImageResource(R.drawable.cirleshape)
             var sectionColor = "454545"

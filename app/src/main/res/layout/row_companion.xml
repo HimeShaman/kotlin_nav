@@ -15,7 +15,8 @@
         app:layout_constraintBottom_toBottomOf="@+id/materialCardView"
         app:layout_constraintEnd_toStartOf="@+id/text_view_companion_time"
         app:layout_constraintStart_toStartOf="@+id/materialCardView"
-        app:layout_constraintTop_toTopOf="@+id/materialCardView" />
+        app:layout_constraintTop_toTopOf="@+id/materialCardView"
+        tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
         android:id="@+id/text_view_companion_name"

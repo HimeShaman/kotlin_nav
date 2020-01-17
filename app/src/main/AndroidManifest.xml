@@ -19,6 +19,7 @@
         <activity
             android:name=".LoginActivity"
             android:exported="true" />
+        <activity android:name=".journey.JourneyScreen3"/>
         <activity android:name=".subscription.SubscriptionScreen9" />
         <activity android:name=".subscription.SubscriptionScreen8" />
         <activity android:name=".subscription.SubscriptionScreen7" />
@@ -29,7 +30,7 @@
         <activity android:name=".subscription.SubscriptionScreen1" />
         <activity android:name=".subscription.SubscriptionScreen2" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".Messagerie" />
+        <activity android:name=".messaging.Messagerie" />
         <activity android:name=".messaging.MessagerieList" />
         <activity
             android:name=".SplashScreen"
