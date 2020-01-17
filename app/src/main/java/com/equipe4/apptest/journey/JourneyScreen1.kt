@@ -22,6 +22,22 @@ class JourneyScreen1 : AppCompatActivity() {
         setSupportActionBar(bottom_bar)
     }
 
+
+    fun doSearch(view:View){
+        val searchedJourney = JourneySearch(
+            editText_input_journey_start.text.toString(),
+            editText_input_journey_end.text.toString(),
+            journey_checkbox1_train.isChecked,
+            journey_checkbox2_bus.isChecked,
+            journey_checkbox3_metro.isChecked ,
+            journey_checkbox4_tram.isChecked
+        )
+
+        val intentSearch = JourneyScreen2.createIntent(this,searchedJourney)
+        startActivity(intentSearch)
+        //No finish in order to modify search criteria if journeys aren't satisfying to the user
+    }
+
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         val inflater = menuInflater
         inflater.inflate(R.menu.bottomappbar_menu, menu)
@@ -40,18 +56,9 @@ class JourneyScreen1 : AppCompatActivity() {
         return true
     }
 
-    fun doSearch(view:View){
-        val searchedJourney = JourneySearch(
-            editText_input_journey_start.text.toString(),
-            editText_input_journey_end.text.toString(),
-            journey_checkbox1_train.isChecked,
-            journey_checkbox2_bus.isChecked,
-            journey_checkbox3_metro.isChecked ,
-            journey_checkbox4_tram.isChecked
-        )
-
-        val intentSearch = JourneyScreen2.createIntent(this,searchedJourney)
-        startActivity(intentSearch)
-        //No finish in order to modify search criteria if journeys aren't satisfying to the user
+    fun goToJourneyScreen(view: View) {
+        val intent = Intent(this, JourneyScreen1::class.java)
+        startActivity(intent)
     }
+
 }

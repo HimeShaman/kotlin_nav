@@ -81,5 +81,7 @@
     <string name="journey_section3">section3</string>
     <string name="journey_section4">section4</string>
     <string name="journey_section5">section5</string>
+    <string name="str_journey_summary">Récapitulatif de votre trajet</string>
+    <string name="str_journey_companion">Trouver un compagnon</string>
 
 </resources>

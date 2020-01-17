@@ -10,7 +10,7 @@ class JourneyItem (val journey: Journey): AbstractItem<JourneyViewHolder>() {
     override val layoutRes: Int
         get() = R.layout.row_journey
     override val type: Int
-        get() = R.id.text_view_time
+        get() = R.id.text_view_companion_name
 
     override fun getViewHolder(v: View): JourneyViewHolder {
         return JourneyViewHolder(v)
