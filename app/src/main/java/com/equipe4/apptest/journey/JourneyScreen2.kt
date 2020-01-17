@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.widget.Toast
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -175,5 +176,11 @@ class JourneyScreen2 : AppCompatActivity() {
         }
         return true
     }
+
+    fun goToJourneyScreen(view: View) {
+        val intent = Intent(this, JourneyScreen1::class.java)
+        startActivity(intent)
+    }
+
 
 }

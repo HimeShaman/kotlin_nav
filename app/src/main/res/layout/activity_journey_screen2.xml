@@ -115,10 +115,11 @@
             android:id="@+id/fab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="goToJourneyScreen"
+            android:src="@drawable/bottom_bar_floating_button"
             app:backgroundTint="@color/red"
             app:layout_anchor="@id/bottom_bar"
-            app:tint="@color/colorWhite"
-            android:src="@drawable/bottom_bar_floating_button"/>
+            app:tint="@color/colorWhite" />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 

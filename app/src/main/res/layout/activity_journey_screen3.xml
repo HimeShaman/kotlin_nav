@@ -109,9 +109,7 @@
         android:id="@+id/coordinator_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:layout_editor_absoluteX="379dp"
-        tools:layout_editor_absoluteY="142dp">
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <com.google.android.material.bottomappbar.BottomAppBar
             android:id="@+id/bottom_bar"
@@ -122,12 +120,14 @@
             android:gravity="start"
             app:backgroundTint="@color/colorWhite"
             app:fabAlignmentMode="center"
-            app:fabCradleMargin="10dp" />
+            app:fabCradleMargin="10dp"
+            />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="goToJourneyScreen"
             android:src="@drawable/bottom_bar_floating_button"
             app:backgroundTint="@color/red"
             app:layout_anchor="@id/bottom_bar"

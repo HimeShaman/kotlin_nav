@@ -5,7 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import android.widget.TextView
+import com.equipe4.apptest.journey.JourneyScreen1
 import com.equipe4.apptest.messaging.MessagerieList
 import kotlinx.android.synthetic.main.activity_journey_screen2.*
 
@@ -51,4 +53,10 @@ class UserProfileActivity : AppCompatActivity() {
         }
         return true
     }
+
+    fun goToJourneyScreen(view: View) {
+        val intent = Intent(this, JourneyScreen1::class.java)
+        startActivity(intent)
+    }
+
 }

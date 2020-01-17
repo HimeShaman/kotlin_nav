@@ -8,7 +8,9 @@ import com.equipe4.apptest.R
 import kotlinx.android.synthetic.main.messagerie_list.*
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import com.equipe4.apptest.UserProfileActivity
+import com.equipe4.apptest.journey.JourneyScreen1
 
 
 class MessagerieList : AppCompatActivity(){
@@ -40,6 +42,11 @@ class MessagerieList : AppCompatActivity(){
             R.id.app_bar_messages -> startActivity(messageIntent)
         }
         return true
+    }
+
+    fun goToJourneyScreen(view: View) {
+        val intent = Intent(this, JourneyScreen1::class.java)
+        startActivity(intent)
     }
 
 }
