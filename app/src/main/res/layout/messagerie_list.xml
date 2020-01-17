@@ -21,7 +21,8 @@
         android:id="@+id/coordinator_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:visibility="visible">
 
         <com.google.android.material.bottomappbar.BottomAppBar
             android:id="@+id/bottom_bar"
@@ -32,8 +33,7 @@
             android:gravity="start"
             app:backgroundTint="@color/colorWhite"
             app:fabAlignmentMode="center"
-            app:fabCradleMargin="10dp"
-            />
+            app:fabCradleMargin="10dp" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab"

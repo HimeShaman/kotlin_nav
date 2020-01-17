@@ -21,7 +21,9 @@ import com.equipe4.apptest.network.app.journeys.JourneyCompanion
 import com.equipe4.apptest.network.navitia.models.journeys.JourneyResult
 import com.mikepenz.fastadapter.FastAdapter
 import com.mikepenz.fastadapter.adapters.ItemAdapter
+import kotlinx.android.synthetic.main.activity_journey_screen1.*
 import kotlinx.android.synthetic.main.activity_journey_screen2.*
+import kotlinx.android.synthetic.main.activity_journey_screen2.bottom_bar
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -81,6 +83,7 @@ class JourneyScreen3 : AppCompatActivity() {
                 println(t.message)
             }
         } )
+        setSupportActionBar(bottom_bar)
     }
 
 

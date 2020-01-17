@@ -157,6 +157,7 @@ class JourneyScreen2 : AppCompatActivity() {
             Toast.makeText(applicationContext, getText(R.string.str_journey_empty_search_error), Toast.LENGTH_LONG).show()
             finish()
         }
+        setSupportActionBar(bottom_bar)
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
