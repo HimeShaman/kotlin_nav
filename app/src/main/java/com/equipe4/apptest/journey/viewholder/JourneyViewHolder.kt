@@ -1,7 +1,6 @@
 package com.equipe4.apptest.journey.viewholder
 
 import android.graphics.Color
-import android.opengl.Visibility
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
@@ -19,7 +18,7 @@ class JourneyViewHolder(itemView: View) : FastAdapter.ViewHolder<JourneyItem>(it
         val hours = journey.duration/3600
         val minutes = (journey.duration%3600)/60
         val seconds = (journey.duration%60)
-        itemView.text_view_time.text = "${hours}h ${minutes}min ${seconds}s"
+        itemView.text_view_companion_name.text = "${hours}h ${minutes}min ${seconds}s"
 
         if(journey.sections.isNotEmpty()){
             val section1 = journey.sections.first()
@@ -47,7 +46,7 @@ class JourneyViewHolder(itemView: View) : FastAdapter.ViewHolder<JourneyItem>(it
     }
 
     override fun unbindView(item: JourneyItem) {
-        itemView.text_view_time.text = null
+        itemView.text_view_companion_name.text = null
         itemView.textView1.visibility = View.INVISIBLE
         itemView.textView2.visibility = View.INVISIBLE
         itemView.textView3.visibility = View.INVISIBLE

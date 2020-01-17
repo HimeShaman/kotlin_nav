@@ -20,6 +20,7 @@ import com.equipe4.apptest.network.app.AppServiceFactory
 import com.equipe4.apptest.network.navitia.NavitiaServiceFactory
 import com.equipe4.apptest.network.navitia.models.journeys.Journey
 import com.equipe4.apptest.network.navitia.models.journeys.JourneyResult
+import com.mikepenz.fastadapter.ClickListener
 import com.mikepenz.fastadapter.FastAdapter
 import com.mikepenz.fastadapter.adapters.ItemAdapter
 import kotlinx.android.synthetic.main.activity_journey_screen1.*
@@ -116,6 +117,12 @@ class JourneyScreen2 : AppCompatActivity() {
                                             journey_recycler_view.addItemDecoration(DividerItemDecoration(this@JourneyScreen2, RecyclerView.VERTICAL))
 
                                             journey_recycler_view.adapter = fastAdapter
+
+                                            fastAdapter.onClickListener = { view, adapter, item, position ->
+                                                val intentSearch = JourneyScreen3.createIntent(this@JourneyScreen2,searchedJourney)
+                                                startActivity(intentSearch)
+                                                false
+                                            }
                                         }
 
 

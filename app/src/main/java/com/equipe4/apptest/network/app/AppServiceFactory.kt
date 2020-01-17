@@ -1,5 +1,6 @@
 package com.equipe4.apptest.network.app
 
+import com.equipe4.apptest.network.app.journeys.CompanionService
 import com.equipe4.apptest.network.app.users.UsersService
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -16,6 +17,11 @@ class AppServiceFactory {
     //Users request
     fun getUserLoginService():UsersService{
         return retrofit.create(UsersService::class.java)
+    }
+
+    //JourneyCompanion request
+    fun getCompanionService():CompanionService{
+        return retrofit.create(CompanionService::class.java)
     }
 
 }
